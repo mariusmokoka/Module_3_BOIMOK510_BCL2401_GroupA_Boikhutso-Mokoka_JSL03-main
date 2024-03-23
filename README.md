@@ -63,25 +63,31 @@ Example #: 1
 
 ## Imperative Approach [2 Minutes]
 1. **Step-by-Step Explanation:** Start by explaining the code logic in the imperative approach.
-   - Mention each step of the process in the code.
-   - Describe how the code provides explicit instructions for each action.
-   - Discuss the use of variables to track the state and progress of the process.
-
+   - We begin by initializing our grill temperature and steak temperature variables to zero.
+   - We preheat the grill to a specific temperature, here set to 204°C.
+   - We season the steak with salt and pepper on both sides.
+   - We enter a loop where we continuously grill the steak until it reaches the desired level of doneness. Inside the loop, we grill the steak, measure its   internal temperature, adjust grill temperature and cooking time based on steak weight and desired doneness, and update the steak temperature accordingly.
+   - Once the steak reaches the desired doneness, we exit the loop.
+   - We serve the steak. If the steak's temperature is at or above the desired doneness, we return "Steak is ready to serve!" Otherwise, we return "Steak needs more cooking."
 2. **Emphasis on How:** Highlight how the imperative approach focuses on detailing "how" the task is accomplished.
-   - Point out the use of loops, conditions, and explicit instructions.
-   - Discuss any mutable variables or states that change during execution.
+   - The imperative approach is all about detailing "how" the task is accomplished.
+   - We utilize loops, conditions, and explicit instructions to control the cooking process.
+   - Mutable variables like grillTemperature, steakTemperature, and seasoning are used to track and update the state and progress of the cooking process.
 
 
 Example #: 2
 
 ## Declarative Approach [2 Minutes]
 1. **High-Level Process Description:** Explain the code logic in the declarative approach.
-   - Describe the cooking process in a high-level, abstract manner.
-   - Emphasize that the code defines "what" should happen rather than "how" it should happen.
-
+   - In the declarative paradigm, we describe the cooking process in a high-level, abstract manner.
+   - The code focuses on defining "what" should happen rather than "how" it should happen.
+   We abstract away the implementation details and instead provide a structured overview of the cooking process.
+   - For instance, we define steps like preheating the grill, seasoning the steak, cooking until desired doneness, and serving the steak without detailing   the exact actions to perform at each step.
 2. **Use of Data Structures:** Discuss the use of data structures (e.g., arrays, objects) to represent the process steps.
-   - Explain how the process steps are organized in a structured format.
-   - Mention any abstraction layers or functions used to encapsulate actions.
+   - In our code, we use a data structure—an array of objects—to represent the cooking process.
+   - Each object in the array represents a step in the process, containing properties such as action, temperature, and seasoning.
+   - This structured format organizes the process steps clearly, making it easy to understand and maintain.
+   - Additionally, we use a for...of loop to iterate over these steps and a switch statement to execute the corresponding actions based on the step descriptions.
 
 # Learning Outcome [1 Minute]
 - Reflect on what you've learned from analyzing these code examples in different paradigms.
